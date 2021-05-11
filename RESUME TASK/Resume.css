@@ -59,3 +59,15 @@ margin:auto;
 background: white;
 margin-bottom: -13px;
 }
+.fas{
+    padding:5px;
+    border-radius: 50%;
+    border :5px dotted yellow;
+    background-color: black;
+    color:yellow;
+   
+}
+.ititle{
+    font-size:30px;
+    font-weight:bold;
+}
