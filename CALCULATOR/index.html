@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+    <script src='cal.js'></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <script>
+        //HEADING
+        var container1 = document.createElement('div')
+        container1.setAttribute('class', 'container')
+        container1.setAttribute('style', 'border:3px solid green;')
+
+        var heading = document.createElement('h4')
+        heading.innerText = 'CALCULATOR'
+        heading.setAttribute('style', 'text-align:center')
+
+
+        container1.append(heading)
+        document.body.append(container1)
+
+        //DISPLAY AREA
+        var container2 = document.createElement('div')
+        container2.setAttribute('class', 'container')
+        container2.setAttribute('style', 'border:3px solid green; height:100px')
+
+        var space = document.createElement('input')
+        space.setAttribute('type', 'text');
+        space.setAttribute('style', 'height:98%;width:100%; float:right ')
+        space.setAttribute('id', 'whitespace');
+
+        container2.append(space)
+        document.body.append(container2)
+
+        //BUTTON AREA
+        var container3 = document.createElement('div')
+        container3.setAttribute('class', 'container')
+        container3.setAttribute('style', 'border:3px solid green; ')
+
+        //FIRST ROW
+
+        var row1 = document.createElement('div')
+        row1.setAttribute('class', 'row')
+
+        //1
+
+        var r1c1 = document.createElement('div')
+        r1c1.setAttribute('class', 'col-3')
+
+
+        var b1 = document.createElement('button')
+        b1.setAttribute('class', 'btn btn-warning')
+        b1.setAttribute('style', 'width:100%;border:2px solid white')
+        b1.setAttribute('onclick','display(1)')
+        b1.innerText = 1;
+
+        r1c1.append(b1)
+
+        //2
+
+        var r1c2 = document.createElement('div')
+        r1c2.setAttribute('class', 'col-3')
+
+
+
+        var b2 = document.createElement('button')
+        b2.setAttribute('class', 'btn btn-warning')
+        b2.setAttribute('style', 'width:100%')
+        b2.setAttribute('onclick','display(2)')
+        b2.innerText = 2;
+
+        r1c2.append(b2)
+
+        //3
+        var r1c3 = document.createElement('div')
+        r1c3.setAttribute('class', 'col-3')
+
+        var b3 = document.createElement('button')
+        b3.setAttribute('class', 'btn btn-warning')
+        b3.setAttribute('style', 'width:100%')
+        b3.setAttribute('onclick','display(3)')
+        b3.innerText = 3;
+
+        r1c3.append(b3)
+
+        //+
+        var r1c4 = document.createElement('div')
+        r1c4.setAttribute('class', 'col-3')
+
+        var bplus = document.createElement('button')
+        bplus.setAttribute('class', 'btn btn-warning')
+        bplus.setAttribute('style', 'width:100%')
+        bplus.setAttribute('onclick',"display('+')")
+        bplus.innerText = '+';
+
+        r1c4.append(bplus)
+
+        row1.append(r1c1, r1c2, r1c3, r1c4);
+        
+
+        //SECOND ROW
+
+        var row2 = document.createElement('div')
+        row2.setAttribute('class', 'row')
+
+        //4
+
+        var r2c1 = document.createElement('div')
+        r2c1.setAttribute('class', 'col-3')
+
+
+        var b4 = document.createElement('button')
+        b4.setAttribute('class', 'btn btn-warning')
+        b4.setAttribute('style', 'width:100%;border:2px solid white')
+        b4.setAttribute('onclick','display(4)')
+        b4.innerText = 4;
+
+        r2c1.append(b4)
+
+        //5
+
+        var r2c2 = document.createElement('div')
+        r2c2.setAttribute('class', 'col-3')
+
+        var b5= document.createElement('button')
+        b5.setAttribute('class', 'btn btn-warning')
+        b5.setAttribute('style', 'width:100%')
+        b5.setAttribute('onclick','display(5)')
+        b5.innerText = 5;
+
+        r2c2.append(b5)
+
+        //6
+        var r2c3 = document.createElement('div')
+        r2c3.setAttribute('class', 'col-3')
+
+        var b6 = document.createElement('button')
+        b6.setAttribute('class', 'btn btn-warning')
+        b6.setAttribute('style', 'width:100%')
+        b6.setAttribute('onclick','display(6)')
+        b6.innerText = 6;
+
+        r2c3.append(b6)
+
+        //-
+        var r2c4 = document.createElement('div')
+        r2c4.setAttribute('class', 'col-3')
+
+        var bminus = document.createElement('button')
+        bminus.setAttribute('class', 'btn btn-warning')
+        bminus.setAttribute('style', 'width:100%')
+        bminus.setAttribute('onclick','display("-")')
+        bminus.innerText = '-';
+
+        r2c4.append(bminus)
+
+        row2.append(r2c1, r2c2, r2c3, r2c4);
+       
+        //THIRD ROW
+
+        var row3 = document.createElement('div')
+        row3.setAttribute('class', 'row')
+
+        //7
+
+        var r3c1 = document.createElement('div')
+        r3c1.setAttribute('class', 'col-3')
+
+
+        var b7 = document.createElement('button')
+        b7.setAttribute('class', 'btn btn-warning')
+        b7.setAttribute('style', 'width:100%;border:2px solid white')
+        b7.setAttribute('onclick','display(7)')
+        b7.innerText = 7;
+
+        r3c1.append(b7)
+
+        //8
+
+        var r3c2 = document.createElement('div')
+        r3c2.setAttribute('class', 'col-3')
+
+        var b8= document.createElement('button')
+        b8.setAttribute('class', 'btn btn-warning')
+        b8.setAttribute('style', 'width:100%')
+        b8.setAttribute('onclick','display(8)')
+        b8.innerText = 8;
+
+        r3c2.append(b8)
+
+        //9
+        var r3c3 = document.createElement('div')
+        r3c3.setAttribute('class', 'col-3')
+
+        var b9 = document.createElement('button')
+        b9.setAttribute('class', 'btn btn-warning')
+        b9.setAttribute('style', 'width:100%')
+        b9.setAttribute('onclick','display(9)')
+        b9.innerText = 9;
+
+        r3c3.append(b9)
+
+        //*
+        var r3c4 = document.createElement('div')
+        r3c4.setAttribute('class', 'col-3')
+
+        var bmul = document.createElement('button')
+        bmul.setAttribute('class', 'btn btn-warning')
+        bmul.setAttribute('style', 'width:100%')
+        bmul.setAttribute('onclick','display("*")')
+        bmul.innerText = '*';
+
+        r3c4.append(bmul)
+
+        row3.append(r3c1, r3c2, r3c3, r3c4);
+        container3.append(row1,row2,row3);
+        document.body.append(container3)
+
+        //FOURTH ROW
+
+        var row4 = document.createElement('div')
+        row4.setAttribute('class', 'row')
+
+        //.
+
+        var r4c1 = document.createElement('div')
+        r4c1.setAttribute('class', 'col-3')
+
+
+        var bdot = document.createElement('button')
+        bdot.setAttribute('class', 'btn btn-warning')
+        bdot.setAttribute('style', 'width:100%;border:2px solid white')
+        bdot.setAttribute('onclick','display(".")')
+        bdot.innerText = '.';
+
+        r4c1.append(bdot)
+
+        //0
+
+        var r4c2 = document.createElement('div')
+        r4c2.setAttribute('class', 'col-3')
+
+        var b0= document.createElement('button')
+        b0.setAttribute('class', 'btn btn-warning')
+        b0.setAttribute('style', 'width:100%')
+        b0.setAttribute('onclick','display(0)')
+        b0.innerText = 0;
+
+        r4c2.append(b0)
+
+        //=
+        var r4c3 = document.createElement('div')
+        r4c3.setAttribute('class', 'col-3')
+
+        var beq = document.createElement('button')
+        beq.setAttribute('class', 'btn btn-warning')
+        beq.setAttribute('style', 'width:100%')
+        beq.setAttribute('onclick','result()')
+        beq.innerText = '=';
+
+        r4c3.append(beq)
+
+        //div
+        var r4c4 = document.createElement('div')
+        r4c4.setAttribute('class', 'col-3')
+
+        var bdiv = document.createElement('button')
+        bdiv.setAttribute('class', 'btn btn-warning')
+        bdiv.setAttribute('style', 'width:100%')
+        bdiv.setAttribute('onclick','display("/")')
+        bdiv.innerText = '/';
+
+        r4c4.append(bdiv)
+
+        row4.append(r4c1, r4c2, r4c3, r4c4);
+
+ //FIFTH ROW
+var row5 = document.createElement('div')
+        row5.setAttribute('class', 'row')
+
+        //7
+
+        var r5c1 = document.createElement('div')
+        r5c1.setAttribute('class', 'col-12')
+
+
+        var bclr = document.createElement('button')
+        bclr.setAttribute('class', 'btn btn-warning')
+        bclr.setAttribute('style', 'width:100%;border:2px solid white')
+        bclr.setAttribute('onclick','clean()')
+        bclr.innerText = 'CLEAR';
+
+        r5c1.append(bclr)
+      row5.append(r5c1)
+        container3.append(row1,row2,row3,row4,row5);
+        document.body.append(container3)
+    </script>
+
+</body>
+
+</html>
