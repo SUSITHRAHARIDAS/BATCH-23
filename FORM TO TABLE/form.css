@@ -1,0 +1,31 @@
+
+
+    .container{
+        float:left;
+        
+        background-color: aqua;
+        font-weight:bold;
+        border:5px solid green;
+        
+        width:500px;
+       
+    }
+    button{
+        margin-left:100px;
+    }
+    #data{
+       float:right;
+        border:5px solid green;
+
+    }
+   
+
+    h3{
+        text-align:center;
+    }
+
+   
+       
+      
+
+      

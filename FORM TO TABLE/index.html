@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' href='form.css'>
+   <script src='form.js'></script>
+
+
+    </head>
+
+
+
+<body>
+    <script>
+        var outline = document.createElement('div')
+        outline.setAttribute('class', 'container')
+       
+
+        //Heading
+
+        var heading = document.createElement('h3')
+        heading.innerText = 'HTML-DOM-FORM'
+     
+
+        //FORM OPEN TAG
+
+        var form = document.createElement('form')
+        form.setAttribute('class', 'form-group')
+     
+
+        //Table Tag
+        var table = document.createElement('table')
+        table.setAttribute('class', 'table')
+
+        //First Row
+
+        var row1 = document.createElement('tr')
+        row1.setAttribute('class', 'row')
+
+        //First NAME
+        var r1c1 = document.createElement('td')
+        r1c1.setAttribute('class', 'col-6')
+
+        var fname = document.createElement('label')
+        fname.setAttribute('for', 'fname')
+        fname.innerText = 'FIRST NAME'
+
+        //F.name Input
+
+        var r1c2 = document.createElement('td')
+        r1c2.setAttribute('class', 'col-6')
+
+        var fnameinp = document.createElement('input')
+        fnameinp.setAttribute('id', 'fname')
+        fnameinp.setAttribute('type', 'text')
+        fnameinp.setAttribute('required', true)
+
+
+        r1c1.append(fname)
+        r1c2.append(fnameinp)
+        row1.append(r1c1, r1c2)
+
+        //Second Row
+
+        var row2 = document.createElement('tr')
+        row2.setAttribute('class', 'row')
+
+        //Last NAME
+        var r2c1 = document.createElement('td')
+        r2c1.setAttribute('class', 'col-6')
+
+        var lname = document.createElement('label')
+        lname.setAttribute('for', 'lname')
+        lname.innerText = 'LAST NAME'
+        
+
+        //l.name Input
+
+        var r2c2 = document.createElement('td')
+        r2c2.setAttribute('class', 'col-6')
+
+        var lnameinp = document.createElement('input')
+        lnameinp.setAttribute('id', 'lname')
+        lnameinp.setAttribute('type', 'text')
+        lnameinp.setAttribute('required', true)
+
+
+        r2c1.append(lname)
+        r2c2.append(lnameinp)
+        row2.append(r2c1, r2c2)
+
+        //Third Row
+
+        var row3 = document.createElement('tr')
+        row3.setAttribute('class', 'row')
+
+        //Address
+        var r3c1 = document.createElement('td')
+        r3c1.setAttribute('class', 'col-6')
+
+        var address = document.createElement('label')
+        address.setAttribute('for', 'address')
+        address.innerText = 'ADDRESS'
+
+        //ADDRESS Input
+
+        var r3c2 = document.createElement('td')
+        r3c2.setAttribute('class', 'col-6')
+
+        var addinp = document.createElement('input')
+        addinp.setAttribute('id', 'address')
+        addinp.setAttribute('type', 'text')
+
+
+        r3c1.append(address)
+        r3c2.append(addinp)
+        row3.append(r3c1, r3c2)
+
+
+        //Fourth Row
+
+        var row4 = document.createElement('tr')
+        row4.setAttribute('class', 'row')
+
+        //Pincode
+        var r4c1 = document.createElement('td')
+        r4c1.setAttribute('class', 'col-6')
+
+        var pin = document.createElement('label')
+        pin.setAttribute('for', 'pin')
+        pin.innerText = 'PINCODE'
+
+        //Pincode  Input
+
+        var r4c2 = document.createElement('td')
+        r4c2.setAttribute('class', 'col-6')
+
+        var pinans = document.createElement('input')
+        pinans.setAttribute('id', 'pin')
+        pinans.setAttribute('type', 'number')
+        pinans.setAttribute('pattern','[0-9]{6}')
+
+
+        r4c1.append(pin)
+        r4c2.append(pinans)
+        row4.append(r4c1, r4c2)
+
+        //FIFTH ROW
+        var row5 = document.createElement('tr')
+        row5.setAttribute('class', 'row')
+
+        //Pincode
+        var r5c1 = document.createElement('td')
+        r5c1.setAttribute('class', 'col-6')
+
+        var state = document.createElement('label')
+        state.setAttribute('for', 'state')
+        state.innerText = 'STATE'
+
+        //State  Input
+
+        var r5c2 = document.createElement('td')
+        r5c2.setAttribute('class', 'col-6')
+
+        var stainp = document.createElement('input')
+        stainp.setAttribute('id', 'state')
+        stainp.setAttribute('type', 'text')
+
+
+        r5c1.append(state)
+        r5c2.append(stainp)
+        row5.append(r5c1, r5c2)
+
+        //SIXTH ROW
+
+
+        var row6 = document.createElement('tr')
+        row6.setAttribute('class', 'row')
+
+        //Country
+        var r6c1 = document.createElement('td')
+        r6c1.setAttribute('class', 'col-6')
+
+        var cont = document.createElement('label')
+        cont.setAttribute('for', 'cont')
+        cont.innerText = 'COUNTRY'
+
+        //COUNTRY  Input
+
+        var r6c2 = document.createElement('td')
+        r6c2.setAttribute('class', 'col-6')
+
+        var continp = document.createElement('input')
+        continp.setAttribute('id', 'cont')
+        continp.setAttribute('type', 'text')
+
+
+        r6c1.append(cont)
+        r6c2.append(continp)
+        row6.append(r6c1, r6c2)
+
+        //SEVENTH ROW
+        var row7 = document.createElement('tr')
+        row7.setAttribute('class', 'row')
+
+        //GENDER
+        var r7c1 = document.createElement('td')
+        r7c1.setAttribute('class', 'col-6')
+
+        var gender = document.createElement('label')
+        gender.setAttribute('for', 'gender')
+        gender.innerText = 'GENDER'
+
+        //Gender  Input
+
+        var r7c2 = document.createElement('td')
+        r7c2.setAttribute('class', 'col-6')
+
+        var geninp = document.createElement('input')
+        geninp.setAttribute('id', 'gender')
+        geninp.setAttribute('type', 'text')
+
+        r7c1.append(gender)
+        r7c2.append(geninp)
+        row7.append(r7c1, r7c2)
+
+        //EIGTH ROW
+        var row8 = document.createElement('tr')
+        row8.setAttribute('class', 'row')
+
+        //FOOD
+        var r8c1 = document.createElement('td')
+        r8c1.setAttribute('class', 'col-6')
+
+        var food = document.createElement('label')
+        food.setAttribute('for', 'food')
+        food.innerText = 'FOOD'
+
+        //Food  Input
+
+        var r8c2 = document.createElement('td')
+        r8c2.setAttribute('class', 'col-6')
+
+        var foodopt = document.createElement('select')
+        foodopt.setAttribute('id', 'food')
+        foodopt.setAttribute('multiple', true)
+
+
+        var fopt1 = document.createElement('Option')
+        fopt1.innerText = 'SOUTH INDIAN'
+
+        var fopt2 = document.createElement('Option')
+        fopt2.innerText = 'NORTH INDIAN'
+
+
+        var fopt3 = document.createElement('Option')
+        fopt3.innerText = 'CONTINENTAL'
+
+        var fopt4 = document.createElement('Option')
+        fopt4.innerText = 'ITALIAN'
+
+        var fopt5 = document.createElement('Option')
+        fopt5.innerText = 'CHINESE'
+
+        foodopt.append(fopt4, fopt5, fopt1, fopt2, fopt3)
+
+
+
+        r8c1.append(food)
+        r8c2.append(foodopt)
+        row8.append(r8c1, r8c2)
+  
+        //NINETH ROW
+
+        var row9 = document.createElement('tr')
+        row9.setAttribute('class', 'row')
+
+        //SUBMIT BUTTON
+        var r9c1 = document.createElement('td')
+        r9c1.setAttribute('class', 'col-12')
+
+        var sub = document.createElement('button')
+        sub.setAttribute('class','btn btn-success')
+        sub.innerText = "SUBMIT"
+       sub.onclick= function (){datatable()}
+ 
+        r9c1.append(sub)
+        row9.append(r9c1)
+        table.append(row1, row2, row7, row3, row4, row5, row6, row8,row9)
+        form.append(table)
+
+
+        outline.append(heading, form)
+        document.body.append(outline)
+
+
+       
+
+    </script>
+
+    <table  id='data' border='1px;'>
+      <tr>
+ <th>FIRST NAME</th>
+ <th>LAST NAME</th>
+ <th>GENDER</th>
+ <th>ADDRESS</th>
+ <th>PINCODE</th>
+ <th>STATE</th>
+ <th>COUNTRY</th>
+ <th>FOOD</th>
+      </tr>
+
+
+    </table>
+
+
+
+</body>
+
+</html>
