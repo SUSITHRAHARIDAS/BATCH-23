@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKATHON</title>
+    <link rel="stylesheet" href="rough.css">
+    <script src='rough.js'></script>
+</head>
+
+<body>
+  
+
+	
+	
+	
+
+
+    <div class="container">
+
+      <img src="github.jpg" alt="github">  <br>
+      <small >Welcome to GitHub</small>
+
+        <form id='repoform'>
+            
+                <table >
+                    <tr class='row'>
+                        <th class='col-6'><label for="user"><b>ENTER USER NAME</b></label> </th>
+                        <th class='col-6'> <input  type="text" id="user"></th> <br>
+                    </tr>
+
+                    <tr class='row'>
+                        <th class='col-12'> <button  onclick="repo()">GET REPO </button></th>
+                    </tr>
+
+                </table>
+            </form>
+            
+            <textarea name="user" cols="48" rows="15">
+                <ul id="userRepos" class="list-group mx-auto mb-5" >
+
+                </ul>
+            </textarea> <br>
+
+      
+
+
+    </div>
+
+
+
+    
+</body>
+
+</html>

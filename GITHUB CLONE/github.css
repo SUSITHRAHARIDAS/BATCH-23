@@ -1,0 +1,39 @@
+.container {
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+    margin-left: 400px;
+    margin-top: 75px;
+    color: white;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-left: 230px;
+    margin-top: 25px;
+}
+
+table {
+    margin-left: 80px;
+}
+
+button {
+    margin-left: 100px;
+    margin-top: 25px;
+    background-color: lightblue;
+}
+
+textarea {
+    margin-left: 70px;
+    margin-top: 50px;
+
+}
+
+small {
+    margin-left: 200px;
+}
+
+body {
+    background-color: grey;
+}
